@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title> 
+	Alter Background image by jQuery amd CSS
+	</title> 
+	<style> 
+  /* heading style CSS */
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+		.box { 
+			width: 700px; 
+			height: 400px; 
+			border: 2px solid black; 
+			background-repeat: no-repeat; 
+			background-image: url( 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-B9_9rIhqPzPjqxc2Jo_KtWXQaBYVuhTNUQ&usqp=CAU"); 
+		} 
+		h1{ 
+			color:green; 
+		} 
+	</style> 
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+	<script> 
+		$(document).ready(function() { 
+			// Change background image of a div by clicking on the button 
+			$("button").click(function() { 
+				var imageUrl = 
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYS-KpljDIT0TYeC7lbomVeoSkfgXJ6L_WXA&usqp=CAU"; 
+				$(".box").css("background-image", "url(" + imageUrl + ")"); 
+			}); 
+		}); 
+	</script> 
+</head> 
+
+<body> 
+	<center> 
+	   <!-- HTML !-->
+	  <span></span>
+<button class="button-63" role="button">&#x1F496; Change Background Image &#128077; </button>
+	<h1></h1> 
+	<h3> 
+	</h3> 
+	<div class="box"></div> 
+	<footer>
+	<p>Powered by &#128076;<a href="" target="_blank">Akshaya developer</a></p>
+</footer>
+	</center> 
+</body> 
+</html>					 
